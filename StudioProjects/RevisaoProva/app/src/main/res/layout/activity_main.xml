@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/Cadastrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="39dp"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toStartOf="@+id/Buscar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ListarRecycler"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="36dp"
+        android:text="RecyclerView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ListarViewPageX"
+        app:layout_constraintEnd_toStartOf="@+id/ListarViewPageX"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ListarListView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="38dp"
+        android:text="ListView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ListarGridView"
+        app:layout_constraintEnd_toStartOf="@+id/ListarGridView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ListarGridView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="58dp"
+        android:text="GridView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ListarListView"
+        app:layout_constraintTop_toBottomOf="@+id/Buscar1" />
+
+    <Button
+        android:id="@+id/Buscar1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="59dp"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Cadastrar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ListarViewPageX"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="58dp"
+        android:text="ViewPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ListarRecycler"
+        app:layout_constraintTop_toBottomOf="@+id/ListarGridView" />
+
+    <Button
+        android:id="@+id/Frag"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SwipeDrop" />
+
+    <Button
+        android:id="@+id/SwipeDrop"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="SwipeDragDrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListarRecycler" />
+</android.support.constraint.ConstraintLayout>
